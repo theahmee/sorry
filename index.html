@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Queen Imshal</title>
+    <style>
+        body {
+            background-color: #fff0f3;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            color: #ff4d6d;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(255, 77, 109, 0.2);
+            text-align: center;
+            max-width: 350px;
+            border: 3px solid #ffb3c1;
+            position: relative;
+        }
+
+        h1 { font-size: 2.2rem; margin-bottom: 10px; }
+        p { color: #590d22; font-size: 1.1rem; line-height: 1.5; }
+
+        /* The Surprise Message */
+        #surprise {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #ffecf1;
+            border-radius: 15px;
+            border: 1px dashed #ff4d6d;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .btn {
+            background: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .btn:hover { background: #c9184a; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Sorry, Imshal... 🥺</h1>
+        <p>I missed our call, but I never stop thinking about you.</p>
+        <p>You're my favorite person in the whole world.</p>
+        
+        <button class="btn" onclick="showLove()">Click for your gift</button>
+
+        <div id="surprise">
+            <h2 style="margin:0;">💝</h2>
+            <p><strong>REDEEMABLE FOR:</strong><br>One long hug and 1,000 extra kisses tonight.</p>
+            <small>Valid forever because I love you.</small>
+        </div>
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById('surprise').style.display = 'block';
+            document.querySelector('.btn').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
